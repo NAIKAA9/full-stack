@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+     body {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .product-h {
+        text-align: center;
+      }
+      .random {
+        max-width: 500px;
+        height: auto;
+        background-color: bisque;
+        margin: 0 auto;
+        padding: 25px;
+        text-align: center;
+        border-radius: 15px;
+      }
+      .box {
+        background-color: rgb(149, 196, 223);
+        padding: 25px;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: antiquewhite;
+        border: none;
+        border-radius: 15px;
+      }
+      .product-card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .product-card img {
+        width: 100px;
+        height: 150px;
+      }
+      .product-card div {
+        padding: 15px;
+        border: 2px solid grey;
+        text-align: center;
+      }
+    </style>
+    </style>
+  </head>
+  <body>
+    <div class="random">
+      <div class="box">
+        <p id="joke"></p>
+        <button class="btn-jk">Generate Joke</button>
+      </div>
+    </div>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>name</th>
+          <th>email</th>
+          <th>message</th>
+        </tr>
+        <tbody id="table-body"></tbody>
+      </thead>
+      <tbody></tbody>
+    </table>
+<div class="product_card">
+  
+</div>
+
+     <script src="async.js"></script>
+  </body>
+</html>

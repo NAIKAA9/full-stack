@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- href="/static/css/style.css"  -->
+  </head>
+  <body>
+    <h1>Welcome to Django</h1>
+    <img
+      src="{% static 'images/monkey.jpeg' %}"
+      alt=""
+      height="250px"
+      width="300px"
+    />
+    <table border="1">
+      <tr>
+        <th>Image</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Grades</th>
+      </tr>
+      {% for i in s %}
+      <tr>
+        <td>
+          <img src="{{i.image.url}}" alt="" height="50px" width="50px" />
+        </td>
+        <td>{{i.first_name}}</td>
+        <td>{{i.last_name}}</td>
+        <td>{{i.age}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.grades}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

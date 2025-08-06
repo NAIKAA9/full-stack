@@ -1,0 +1,73 @@
+/* h1 {
+  font-size: 50px;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 50px;
+  letter-spacing: 10px;
+} */
+/* syntax of pesudo class
+selector:pesudo-class-name{
+}
+*/
+
+/* ol .first,
+ul .first {
+  background-color: aquamarine;
+} */
+li {
+  list-style: none;
+}
+li:first-child {
+  background-color: rgb(23, 188, 199);
+}
+li:last-child {
+  text-transform: uppercase;
+  color: #ca0873;
+}
+li:nth-child(even) {
+  text-align: center;
+  background-color: blueviolet;
+  color: #689e0d;
+  font-size: 30px;
+}
+
+a:link,
+a:visited {
+  font-size: 70px;
+  background-color: burlywood;
+  color: #ca0873;
+  text-decoration: none;
+}
+a:hover {
+  background-color: yellowgreen;
+  font-size: 70px;
+}
+a:active {
+  font-size: 100px;
+}
+
+#para::first-letter {
+  font-size: 40px;
+  color: red;
+}
+#para::first-line {
+  background-color: burlywood;
+}
+#s {
+  font-style: italic;
+}
+
+#para::before {
+  content: "Javascript is fun 😍";
+  color: chocolate;
+  font-size: 30px;
+}
+
+#para::after {
+  content: "❌❌❌❌❌";
+}

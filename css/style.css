@@ -1,0 +1,47 @@
+.container {
+  height: 600px;
+  width: 600px;
+  border: 5px solid;
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px 100px 100px; */
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  /* horizontal align all the items we use   */
+  justify-content: center;
+  /* vertical align all the items we use   */
+  align-content: center;
+  /* horizontal align content we use   */
+  justify-items: center;
+  /* vertical align content items we use   */
+  align-items: center;
+}
+
+.container > div {
+  background-color: rgba(127, 255, 212, 0.806);
+  color: black;
+  font-size: 30px;
+  border: 2px solid;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.el-1 {
+  justify-self: start;
+}
+.el-6 {
+  align-self: start;
+}
+.el-3 {
+  justify-self: end;
+}
+/* .el-1 {
+  grid-column: 1 / 5;
+}
+.el-2 {
+  grid-row: 2 / 5;
+}
+
+.el-5 {
+  grid-column: 4 / 5;
+  grid-row: 2 / -1;
+} */

@@ -1,0 +1,12 @@
+position:
+1.relative = positioned relative to where it normal present in our code
+2.absolute = positioned relative to its parent if there is no relative it will positioned relative to body
+3.fixed: position based on value to view port 
+4.sticky: positioned based on scroll position
+5.static: normal flow top,bottom,left,right will not apply
+
+
+percentages
+
+max-width
+min-width

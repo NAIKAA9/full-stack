@@ -1,0 +1,12 @@
+li {
+  list-style: none;
+}
+.product-card {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}

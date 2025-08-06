@@ -1,0 +1,42 @@
+/* universial selector 
+* {
+  font-size: 70px;
+}
+ element selector 
+h1 {
+  background: gray;
+}
+p {
+  font-size: 12px;
+  text-align: center;
+}
+*/
+/* id seletor */
+#part-1 {
+  background: rgba(159, 9, 200, 0.5);
+}
+
+.list {
+  background-color: #2f4f52;
+  /* text-align: center; */
+}
+div {
+  color: aqua;
+  /* text-align: center; */
+}
+/* group selector */
+.list,
+div {
+  text-align: center;
+}
+/* descendant selector */
+/* .list .first {
+  color: aliceblue;
+  font-size: 50px;
+} */
+
+/* direct child selector */
+.list > li {
+  color: aliceblue;
+  font-size: 50px;
+}

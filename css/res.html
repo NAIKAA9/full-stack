@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design Example</title>
+    <style>
+      @media (max-width: 600px) {
+        img {
+          max-width: 250px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+
+      @media (min-width: 601px) and (max-width: 999px) {
+        img {
+          max-width: 400px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+
+      @media (min-width: 1000px) {
+        img {
+          max-width: 600px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+
+      #container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="download.jpeg" alt="Sample image" />
+      <p>Welcome to CSS</p>
+    </div>
+  </body>
+</html>

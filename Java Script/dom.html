@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .product-h {
+        text-align: center;
+      }
+      .random {
+        max-width: 500px;
+        height: auto;
+        background-color: bisque;
+        margin: 0 auto;
+        padding: 25px;
+        text-align: center;
+        border-radius: 15px;
+      }
+      .box {
+        background-color: rgb(149, 196, 223);
+        padding: 25px;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: antiquewhite;
+        border: none;
+        border-radius: 15px;
+      }
+      .product-card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .product-card img {
+        width: 100px;
+        height: 150px;
+      }
+      .product-card div {
+        padding: 15px;
+        border: 2px solid grey;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline events -->
+    <!-- <button onclick="alert('button is clicked')">Click me</button> -->
+    <!-- <button ondblclick="dc()">Double Click</button> 
+    <button id="btn">Click 😁</button>
+    <p>
+      Welcome to the React documentation! This page will give you an
+      introduction to 80% of the <span>React concepts</span> that you will use
+      on a daily basis.
+    </p>
+    <button id="key">KeyBoard events</button>
+
+    <input type="text" class="input" />
+    <button id="inputbutton">submit</button>
+    
+    <div class="value">0</div>
+    <div class="container">
+      <button id="in">increment</button>
+      <button id="res">reset</button>
+      <button id="dec">decrement</button>
+    </div>
+    -->
+
+    <!-- <h1 id="main-one">Luffy</h1>
+    <h2 id="main-two">Luffy</h2>
+    <h3 id="main-three">Luffy</h3>
+    <button>Click</button> -->
+    <h1>Project 1</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>email</th>
+        </tr>
+      </thead>
+      <tbody id="t-body"></tbody>
+    </table>
+    <h1>Project 2</h1>
+    <div class="random">
+      <div class="box">
+        <h2>Random Joke Generater</h2>
+        <p id="joke">😁</p>
+        <button class="btn btn-rn">Generate a joke</button>
+      </div>
+    </div>
+
+    <h1 class="product-h">Product List</h1>
+    <div class="product-card">
+      <button class="btn-pro">Get Products</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

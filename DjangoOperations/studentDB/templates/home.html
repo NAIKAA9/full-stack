@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+<title>{% block title %} Home {% endblock %}</title>
+{% block content %} {% if user.is_authenticated %}
+<h1>Hello Welcome Django</h1>
+<p>Welcome to web developer job</p>
+{% else %}
+<h1>Login</h1>
+<form method="POST" action="{% url 'home' %}">
+  {% csrf_token %}
+  <div class="mb-3">
+    <input
+      type="text"
+      class="form-control"
+      name="username"
+      placeholder="username"
+    />
+  </div>
+  <br />
+  <div class="mb-3">
+    <input
+      type="password"
+      class="form-control"
+      name="password"
+      placeholder="password"
+    />
+  </div>
+  <button class="btn btn-secondary" type="submit">Submit</button>
+</form>
+{% endif %} {% endblock %}
